@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Lexend", sans-serif;
+}
+
+header {
+    background-image: url(../img/bg.svg);/* adicionar imagens de fundo */
+    background-position: center;/* centralizar imagem de fundo */
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    & .navbar{
+        display:flex;
+        justify-content: space-between;
+        padding: 16px 0;
+    }
+}
