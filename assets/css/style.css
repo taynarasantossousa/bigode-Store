@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,68 +8,172 @@
     font-family: "Lexend", sans-serif;
 }
 
-header {
-    background-image: url(../img/bg.svg);/* adicionar imagens de fundo */
-    background-position: center;/* centralizar imagem de fundo */
-    background-repeat: no-repeat;
-    background-size: cover;
+body {
 
-    & .navbar{
-        display:flex;
-        justify-content: space-between;
-        padding: 16px 0;
-        align-items: center;
+    header {
+        background-image: url(../img/bg.svg);
+        /* adicionar imagens de fundo */
+        background-position: center;
+        /* centralizar imagem de fundo */
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 16px 92px;
 
-        & nav {
-         display: flex;
-         gap: 40px;
-          padding: 10px;
-          width: 338px;
-          height: 47px;
+        & .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 16px 0;
+            align-items: center;
 
-          & a {
-            color: #EFEFEFB2;
-            font-size: 18px;
-          }
+            & nav {
+                display: flex;
+                gap: 40px;
+                padding: 10px;
+                width: 338px;
+                height: 47px;
 
-          & a:first-child {
-        color: #FFFFFF;
-          } 
+                & a {
+                    color: #EFEFEFB2;
+                    font-size: 18px;
+                }
+
+                & a:first-child {
+                    color: #FFFFFF;
+                }
+            }
+        }
+
+        & .btns {
+            display: flex;
+            gap: 16px;
+        }
+
+        & button {
+            border-radius: 8px;
+            padding: 11px 16px;
+            background: #3B44F6;
+            color: #FFFFFF;
+            border: none;
+        }
+
+        & button:last-child {
+            background: transparent;
+            border: 1px solid #FFFFFF;
+        }
+
+        & .home {
+            height: calc(100vh - 190px);
+            margin-top: 114px;
+
+
+            & h1 {
+                margin-bottom: 26px;
+                color: #FFFFFF;
+                font-size: 48px;
+
+            }
+
+            & p {
+                font-size: 24px;
+                margin-bottom: 64px;
+                color: #FFFFFF;
+
+
+
+            }
+
+            & button {
+                padding: 16px 32px;
+                background: #3844f6;
+                border-radius: 6px;
+                border: none;
+                color: #fff;
+
+            }
         }
     }
 
-    & .btns {
-        display: flex;
-        gap: 16px;
-    }
 
-    & button {
-        border-radius: 8px;
-        padding: 11px 16px;
-        background: #3B44F6;
-        color:#FFFFFF;
-        border: none;
-    }
-
-    & button:last-child {
-        background: transparent;
-        border: 1px solid #FFFFFF;
-    }
-
-    & .home {
-        height: calc(100vh - 190px);
-        margin-top: 114px;
+    main {
+        & .title {
+            font-size: 26px;
+            padding: 70px 182px;
+            align-items: center;
+            justify-content: space-between;
+        }
 
         & h1 {
-            margin-bottom: 26px;
-            color: #FFFFFF;
-            font-size: 48px;
+            color: #181818;
+            font-size: 36px;
+            font-weight: 600;
+            padding: 16px 32px;
+            text-align: center;
         }
 
         & p {
-            font-size: 24px;
-            margin-bottom: 64px;
-            color: #FFFFFF;
+            color: #323232;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        & .Card {
+            padding: 80px 182px;
+            display: flex;
+            gap: 83px;
+            justify-content: center;
+            border-radius: 100px;
+            height: 94px;
+            align-items: center;
+            position: relative;
+            text-align: center;
+        }
+
+        & h2 {
+            font-family: Lexend;
+            font-weight: 500;
+            font-size: 20px;
+            color: #181818;
+            width: 250px;
+            text-align: center;
+            position: relative;
+            padding: 16px;
+        }
+
+        & .games-genres {
+            & h1 {
+                text-align: left;
+                font-size: 36px;
+                position: absolute;
+
+
+            }
+
+            & p {
+                color: #3B44F6;
+                text-align: right;
+                font-size: 18px;
+                margin-left: auto;
+                justify-content: space-between;
+
+            }
+
+            .games-genres {
+                display: flex;
+                gap: 16px;
+                border-radius: 8px;
+                padding-bottom: 40px 92px;
+                height: 169px;
+            }
+        }
+
+        & .Games {
+            & h1 {
+                text-align: left;
+                padding-top: 10px 96px;
+                bottom: 10px;
+                gap: 10px;
+                width: 518px;
+            }
         }
     }
 }
